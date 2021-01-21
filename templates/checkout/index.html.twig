@@ -1,0 +1,138 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	Checkout
+{% endblock %}
+
+{% block body %}
+	<div class="product-big-title-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="product-bit-title text-center">
+						<h2>Checkout</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="single-product-area">
+		<div class="zigzag-bottom"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="product-content-right">
+						<div class="woocommerce">
+							<form enctype="multipart/form-data" action="#" class="checkout" method="post" name="checkout">
+								<div id="customer_details" class="col2-set">
+									<div class="woocommerce-billing-fields">
+										<h3>Billing Details</h3>
+										<div class="col-md-6">
+											{{ form_start(form) }}
+											<p id="billing_first_name_field" class="form-row form-row-first validate-required">
+												<label class="" for="billing_first_name">{{ form_label(form.FirstName)}}</label>
+												{{ form_widget(form.FirstName) }}
+											</p>
+
+											<p id="billing_last_name_field" class="form-row form-row-last validate-required">
+												<label class="" for="billing_last_name">{{ form_label(form.LastName)}}
+
+												</label>
+												{{ form_widget(form.LastName) }}
+											</p>
+
+											<p id="billing_email_field" class="form-row form-row-first validate-required validate-email">
+												<label class="" for="billing_email">{{ form_label(form.Email )}}
+
+												</label>
+												{{ form_widget(form.Email ,{ 'attr': {'size': '65'} }) }}
+											</p>
+
+											<p id="billing_phone_field" class="form-row form-row-last validate-required validate-phone">
+												<label class="" for="billing_phone">{{ form_label(form.Phone )}}
+
+												</label>
+												{{ form_widget(form.Phone) }}
+											</p>
+										</div>
+										<div class="clear"></div>
+										<div class="col-md-6">
+											<p id="billing_company_field" class="form-row form-row-wide">
+												<label class="" for="billing_company">
+													{{ form_label(form.CompanyName )}}</label>
+												{{ form_widget(form.CompanyName) }}
+											</p>
+
+											<p id="billing_address_1_field" class="form-row form-row-wide address-field validate-required">
+												<label class="" for="billing_address_1">{{ form_label(form.Address )}}
+
+												</label>
+												{{ form_widget(form.Address) }}
+											</p>
+
+											<p id="billing_city_field" class="form-row form-row-wide address-field validate-required" data-o_class="form-row form-row-wide address-field validate-required">
+												<label class="" for="billing_city">{{ form_label(form.City )}}
+
+												</label>
+												{{ form_widget(form.City) }}
+											</p>
+
+
+											<p id="billing_postcode_field" class="form-row form-row-last address-field validate-required validate-postcode" data-o_class="form-row form-row-last address-field validate-required validate-postcode">
+												<label class="" for="billing_postcode">{{ form_label(form.PostCode )}}
+
+												</label>
+												{{ form_widget(form.PostCode) }}
+											</p>
+										</div>
+
+										<div class="clear"></div>
+										<div class="col-md-12">
+											<div id="order_review" style="position: relative;">
+												<div id="payment">
+													<ul class="payment_methods methods">
+														<li class="payment_method_bacs">
+															<input type="radio" data-order_button_text="" checked="checked" value="bacs" name="payment_method" class="input-radio" id="payment_method_bacs">
+															<label for="payment_method_bacs">Direct Bank Transfer
+															</label>
+															<div class="payment_box payment_method_bacs">
+																<p>Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order won’t be shipped until the funds have cleared in our account.</p>
+															</div>
+														</li>
+														<li class="payment_method_cheque">
+															<input type="radio" data-order_button_text="" value="cheque" name="payment_method" class="input-radio" id="payment_method_cheque">
+															<label for="payment_method_cheque">Cheque Payment
+															</label>
+															<div style="display:none;" class="payment_box payment_method_cheque">
+																<p>Please send your cheque to Store Name, Store Street, Store Town, Store State / County, Store Postcode.</p>
+															</div>
+														</li>
+														<li class="payment_method_paypal">
+															<input type="radio" data-order_button_text="Proceed to PayPal" value="paypal" name="payment_method" class="input-radio" id="payment_method_paypal">
+															<label for="payment_method_paypal">PayPal
+																<img alt="PayPal Acceptance Mark" src="https://www.paypalobjects.com/webstatic/mktg/Logo/AM_mc_vs_ms_ae_UK.png"><a title="What is PayPal?" onclick="javascript:window.open('https://www.paypal.com/gb/webapps/mpp/paypal-popup','WIPaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1060, height=700'); return false;" class="about_paypal" href="https://www.paypal.com/gb/webapps/mpp/paypal-popup">What is PayPal?</a>
+															</label>
+															<div style="display:none;" class="payment_box payment_method_paypal">
+																<p>Pay via PayPal; you can pay with your credit card if you don’t have a PayPal account.</p>
+															</div>
+														</li>
+													</ul>
+
+													<div class="form-row place-order">
+														<input type="submit" data-value="Place order" value="Place order" id="place_order" name="woocommerce_checkout_place_order" class="button alt">
+													</div>
+													<div class="clear"></div>
+												</div>
+											</div>
+										</div>
+										{{ form_end(form) }}
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}
