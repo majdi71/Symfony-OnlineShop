@@ -1,4 +1,5 @@
 # Symfony-OnlineShop
+
 # Product Insert in data base
 INSERT INTO `product` (`id`, `name`, `price`, `description`, `image`) VALUES
 (1, 'Iphone x/64Go/Silver', 3599, 'Ecran 5,8\" Super Retina HD 3D Touch (2436 x 1125 pixels) - Face ID - Systéme d\'exploitation: iOS 11 - Processeur: Apple A11 Hexa-core 2,39 GHz - Mémoire RAM 3 Go - Stockage : 64 Go - Appareil photo Arriere: Dual 12 MP (Ouverture f/1.8, 28mm) + 12 MP (Ouverture f/2.4, 52mm) - Zoom numérique: jusqu’à 10 x - Appareil Avant 7 MégaPixel (Ouverture ƒ/2,2) Retina Flash - Enregistrement vidéo 4K - HD 1080p avec Wifi, 4G et Bluetooth 5.0 - Batterie: lithium‑ion (2716 mAh) - Temps de conversation Sans Fil: jusqu’à 21 heures - Lecture audio sans fil: Jusqu’à 60 heures - Couleur: Silver', 'iphonex.gif'),
