@@ -1,5 +1,5 @@
 # Symfony-OnlineShop
-# 
+# Product Insert in data base
 INSERT INTO `product` (`id`, `name`, `price`, `description`, `image`) VALUES
 (1, 'Iphone x/64Go/Silver', 3599, 'Ecran 5,8\" Super Retina HD 3D Touch (2436 x 1125 pixels) - Face ID - Systéme d\'exploitation: iOS 11 - Processeur: Apple A11 Hexa-core 2,39 GHz - Mémoire RAM 3 Go - Stockage : 64 Go - Appareil photo Arriere: Dual 12 MP (Ouverture f/1.8, 28mm) + 12 MP (Ouverture f/2.4, 52mm) - Zoom numérique: jusqu’à 10 x - Appareil Avant 7 MégaPixel (Ouverture ƒ/2,2) Retina Flash - Enregistrement vidéo 4K - HD 1080p avec Wifi, 4G et Bluetooth 5.0 - Batterie: lithium‑ion (2716 mAh) - Temps de conversation Sans Fil: jusqu’à 21 heures - Lecture audio sans fil: Jusqu’à 60 heures - Couleur: Silver', 'iphonex.gif'),
 (2, 'iPhone 6 / 16 Go / Silver', 1713, 'Écran Retina HD multitouch 4.7\" 750 x 1334 pixels (326 ppp) - Processeur Apple A8 avec architecture 64 bits Dual-Core 1.4 GHz - Systéme iOS 8 - RAM 1 Go - Mémoire 16 Go - Appareil Photo iSight 8 mégapixels (Arriére) avec mise au point automatique et détection des visages, 1.2 Mégapixels (Frontale) - Enregistrement vidéo HD 1080p - 3G - Wifi - Bluetooth - GPS ', 'iphone65.jpeg'),
